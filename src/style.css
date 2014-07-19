@@ -1,0 +1,26 @@
+/*
+Theme Name: Red Rock Robotics
+Author: Harrison Unruh & Annie Yun
+Description: A theme designed to be optimized for the FIRST robotics team 3006, Red Rock Robotics. The theme depends on Bootstrap to provide a CSS framework;
+Version: 1.0
+License: The MIT License (MIT)
+Text Domain: redrock
+
+*/
+
+@import url('css/header.css');
+
+body {
+    background: #EEEEEE;
+}
+
+div#body-wrapper {
+    background: #CCC;
+    top: 0px;
+    left: 50%;
+    margin-left: -384px;
+    height: 1000px;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
