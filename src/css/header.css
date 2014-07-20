@@ -11,6 +11,10 @@ button.navbar-toggle .icon-bar {
     margin-top: 2px;
 }
 
+li.active {
+    border-top: #
+}
+
 nav.navbar-redrock {
     left: 50%;
     margin-left: -384px;
@@ -44,13 +48,19 @@ ul.nav li.active {
 
 /* Styling specific to screen size */
 /* Mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .desktop-logo {
         display: none;
     }
     .mobile-logo {
         margin-top: -10px;
         display: block;
+    }
+
+    div.navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 44px;
     }
 
     nav.navbar-fixed-top {
@@ -68,11 +78,11 @@ ul.nav li.active {
 @media screen and (min-width: 768px) {
     div#navbar-mobile{
         position: absolute;
-        left: 253px;
+        left: 250px;
         top: 69px;
     }
 
-    desktop-logo {
+    .desktop-logo {
         display: block;
     }
     .mobile-logo {
