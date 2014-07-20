@@ -7,3 +7,19 @@ License: The MIT License (MIT)
 Text Domain: redrock
 
 */
+
+@import url('css/header.css');
+
+body {
+    background: #EEEEEE;
+}
+
+div#body-wrapper {
+    top: 0px;
+    left: 50%;
+    margin-left: -384px;
+    height: auto;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}

@@ -1,0 +1,108 @@
+button.navbar-toggle {
+    background: #EEEEEE;
+}
+button.navbar-toggle .icon-bar {
+    background: #333;
+    border-radius: 1px;
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+li.active {
+    border-top: #
+}
+
+nav.navbar-redrock {
+    left: 50%;
+    margin-left: -384px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    top: 0px;
+}
+nav.navbar a.navbar-brand {
+    color: #000000;
+    font-size: 20px;
+}
+nav.navbar a.navbar-brand p {
+    position: absolute;
+    top: 27px;
+    left: 80px;
+}
+
+ul.nav {
+    background: #FFFFFF;
+}
+ul.nav a {
+    color: #000000;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+/* Styling specific to screen size */
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        margin-top: -10px;
+        display: block;
+    }
+
+    div.navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 44px;
+    }
+
+    nav.navbar-fixed-top {
+        background: #FFFFFF;
+        height: 54px;
+    }
+    nav.navbar-redrock {
+        left: 0px;
+        margin-left: 0px;
+        height: 54px;
+    }
+
+    /* Active link color needs to be darker to be more clear on mobile */
+    ul.nav li.active {
+        background: #DDDDDD;
+    }
+    ul.nav a:hover {
+        background: #DDDDDD;
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 768px) {
+    div#navbar-mobile{
+        position: absolute;
+        left: 250px;
+        top: 69px;
+    }
+
+    .desktop-logo {
+        display: block;
+    }
+    .mobile-logo {
+        display: none;
+    }
+
+    nav.navbar-fixed-top {
+        background: #FFFFFF;
+        height: 120px;
+    }
+    nav.navbar-redrock {
+        height: 120px;
+    }
+
+    ul.nav li.active {
+        background: #EEEEEE;
+    }
+}
