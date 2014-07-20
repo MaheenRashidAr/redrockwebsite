@@ -42,9 +42,6 @@ ul.nav a {
     padding-left: 13px;
     padding-right: 13px;
 }
-ul.nav li.active {
-    background: #EEEEEE;
-}
 
 /* Styling specific to screen size */
 /* Mobile screens */
@@ -72,6 +69,14 @@ ul.nav li.active {
         margin-left: 0px;
         height: 54px;
     }
+
+    /* Active link color needs to be darker to be more clear on mobile */
+    ul.nav li.active {
+        background: #DDDDDD;
+    }
+    ul.nav a:hover {
+        background: #DDDDDD;
+    }
 }
 
 /* Desktop screens */
@@ -95,5 +100,9 @@ ul.nav li.active {
     }
     nav.navbar-redrock {
         height: 120px;
+    }
+
+    ul.nav li.active {
+        background: #EEEEEE;
     }
 }

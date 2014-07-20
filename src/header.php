@@ -33,14 +33,6 @@
 
                 <div class="collapse navbar-collapse" id="navbar-mobile">
                     <ul class="nav navbar-nav">
-<!--
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Contact Us</a></li>
--->
                         <?php
                             $pages = get_pages(array('sort_column' => 'ID'));
                             foreach($pages as $page) {
