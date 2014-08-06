@@ -11,8 +11,10 @@ button.navbar-toggle .icon-bar {
     margin-top: 2px;
 }
 
-li.active {
-    border-top: #
+div.lnk-wrapper {
+    display: block;
+    height: 17px;
+    overflow: hidden;
 }
 
 nav.navbar-redrock {
@@ -34,13 +36,19 @@ nav.navbar a.navbar-brand p {
     left: 80px;
 }
 
+ul.links {
+    list-style-type: none;
+    padding: 0px;
+}
 ul.nav {
     background: #FFFFFF;
 }
 ul.nav a {
     color: #000000;
+    padding-top: 17px;
     padding-left: 13px;
     padding-right: 13px;
+    padding-bottom: 16px;
 }
 
 /* Styling specific to screen size */
@@ -81,6 +89,21 @@ ul.nav a {
 
 /* Desktop screens */
 @media screen and (min-width: 768px) {
+    a.header-lnk:hover span.regular {
+        -webkit-transform: translate(0px,-16px);
+        -moz-transform: translate(0px,-16px);
+        -o-transform: translate(0px,-16px);
+        -ms-transform: translate(0px,-16px);
+        transform: translate(0px,-16px);
+    }
+    a.header-lnk:hover span.highlight {
+        -webkit-transform: translate(0px,-14px);
+        -moz-transform: translate(0px,-14px);
+        -o-transform: translate(0px,-14px);
+        -ms-transform: translate(0px,-14px);
+        transform: translate(0px,-14px);
+    }
+
     div#navbar-mobile{
         position: absolute;
         left: 250px;
@@ -102,6 +125,30 @@ ul.nav a {
         height: 120px;
     }
 
+    span.highlight {
+        float: left;
+        color: #C34816;
+        margin-top: -5px;
+        -webkit-transition: .1s linear;
+        -moz-transition: .1s linear;
+        -o-transition: .1s linear;
+        transition: .1s linear;
+    }
+    span.regular {
+        float: left;
+        margin-top: -3px;
+        -webkit-transition: .1s linear;
+        -moz-transition: .1s linear;
+        -o-transition: .1s linear;
+        transition: .1s linear;
+    }
+
+    ul.nav a:hover {
+        background: #FFFFFF;
+    }
+    ul.nav a.active:hover {
+        background: #EEEEEE;
+    }
     ul.nav li.active {
         background: #EEEEEE;
     }

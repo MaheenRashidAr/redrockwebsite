@@ -38,9 +38,18 @@
                             foreach($pages as $page) {
                         ?>
                                 <li class="<?php if(is_page($page->ID)) {
-                                    echo "active";
-                                }?>">
-                                    <a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a>
+                                                    echo "active";
+                                                 }?>">
+                                    <a class="header-lnk <?php if(is_page($page->ID)) {
+                                                             echo "active";
+                                                         }?>"
+                                       href="<?php echo get_page_link( $page->ID ); ?>">
+                                        <div class="lnk-wrapper">
+                                            <ul class="links">
+                                                <li><span class="regular"><?php echo $page->post_title; ?></span></li>
+                                                <li><span class="highlight"><?php echo $page->post_title; ?></span></li>            </ul>
+                                        </div>
+                                    </a>
                                 </li>
                         <?php
                             }
