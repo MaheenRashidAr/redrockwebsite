@@ -93,15 +93,17 @@ ul.nav a {
         -webkit-transform: translate(0px,-16px);
         -moz-transform: translate(0px,-16px);
         -o-transform: translate(0px,-16px);
-        -ms-transform: translate(0px,-16px);
+        -ms-transform: translate(0px,-23px);
         transform: translate(0px,-16px);
+        transform: translate(0px,-23px)\0;
     }
     a.header-lnk:hover span.highlight {
         -webkit-transform: translate(0px,-14px);
         -moz-transform: translate(0px,-14px);
         -o-transform: translate(0px,-14px);
-        -ms-transform: translate(0px,-14px);
+        -ms-transform: translate(0px,-21px);
         transform: translate(0px,-14px);
+        transform: translate(0px,-21px)\0;
     }
 
     div#navbar-mobile{
@@ -127,6 +129,8 @@ ul.nav a {
 
     span.highlight {
         float: left;
+        float: none\0;
+        float: none\9;
         color: #C34816;
         margin-top: -5px;
         -webkit-transition: .1s linear;
@@ -136,6 +140,8 @@ ul.nav a {
     }
     span.regular {
         float: left;
+        float: none\0;
+        float: none\9;
         margin-top: -3px;
         -webkit-transition: .1s linear;
         -moz-transition: .1s linear;
