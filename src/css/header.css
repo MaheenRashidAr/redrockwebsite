@@ -89,21 +89,28 @@ ul.nav a {
 
 /* Desktop screens */
 @media screen and (min-width: 768px) {
+    a.dropdown-link {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;  
+    }
+    a.dropdown-link:hover {
+        color: #C34816!important;
+    }
     a.header-lnk:hover span.regular {
-        -webkit-transform: translate(0px,-16px);
-        -moz-transform: translate(0px,-16px);
-        -o-transform: translate(0px,-16px);
-        -ms-transform: translate(0px,-23px);
-        transform: translate(0px,-16px);
-        transform: translate(0px,-23px)\0;
+        -webkit-transform: translate(0px,-17px);
+        -moz-transform: translate(0px,-17px);
+        -o-transform: translate(0px,-17px);
+        -ms-transform: translate(0px,-24px);
+        transform: translate(0px,-17px);
+        transform: translate(0px,-24px)\0;
     }
     a.header-lnk:hover span.highlight {
-        -webkit-transform: translate(0px,-14px);
-        -moz-transform: translate(0px,-14px);
-        -o-transform: translate(0px,-14px);
-        -ms-transform: translate(0px,-21px);
-        transform: translate(0px,-14px);
-        transform: translate(0px,-21px)\0;
+        -webkit-transform: translate(0px,-15px);
+        -moz-transform: translate(0px,-15px);
+        -o-transform: translate(0px,-15px);
+        -ms-transform: translate(0px,-22px);
+        transform: translate(0px,-15px);
+        transform: translate(0px,-22px)\0;
     }
 
     div#navbar-mobile{
@@ -117,6 +124,10 @@ ul.nav a {
     }
     .mobile-logo {
         display: none;
+    }
+    
+    li.dropdown:hover ul.dropdown-menu {
+        display: block;
     }
 
     nav.navbar-fixed-top {
@@ -132,7 +143,7 @@ ul.nav a {
         float: none\0;
         float: none\9;
         color: #C34816;
-        margin-top: -5px;
+        margin-top: -4px;
         -webkit-transition: .1s linear;
         -moz-transition: .1s linear;
         -o-transition: .1s linear;
