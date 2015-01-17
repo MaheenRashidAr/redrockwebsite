@@ -8,7 +8,7 @@
         <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400'  type='text/css'>
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
         <?php if( is_page() ): ?>
-            <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/page.css" type="text/css">
+            <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/page.css" type="text/css">
         <?php endif; ?>
         <link rel="icon" type="image/ico" href="images/icon/favicon.ico">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -19,11 +19,26 @@
 
     <nav class="navbar-fixed-top">
         <nav class="navbar navbar-redrock" role="navigation">
+            <nav id="nav-users">
+                <?php if( is_user_logged_in() ): ?>
+                    <a class="btn-login" href="<?php echo admin_url(); ?>">
+                        Tools&nbsp;&nbsp;<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                    </a>
+                    <a class="btn-login" href="<?php echo wp_logout_url( get_permalink() ); ?>">
+                        Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    </a>
+                <?php else: ?>
+                    <a class="btn-login" href="<?php echo wp_login_url( get_permalink() ); ?>">
+                        Login&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                    </a>
+                <?php endif; ?>
+            </nav>
+
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <img style="float: left;" class="desktop-logo" src="<?php bloginfo('template_directory');?>/images/header/logo-large.png">
-                        <img class="mobile-logo" src="<?php bloginfo('template_directory');?>/images/header/logo-small.png">
+                        <img style="float: left;" class="desktop-logo" src="<?php echo esc_url( get_template_directory_uri() );?>/images/header/logo-large.png">
+                        <img class="mobile-logo" src="<?php echo esc_url( get_template_directory_uri() );?>/images/header/logo-small.png">
                         <p class="mobile-logo">Red Rock Robotics</p>
                     </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile">

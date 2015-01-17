@@ -1,24 +1,68 @@
-/* Styling specific to screen size */
-/* Mobile screens */
-@media screen and (max-width: 767px) {
-    div#content-wrapper {
-        position: absolute;
-        top: 60px;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 100% - 50px;
-        font-family: 'Source Sans Pro', sans-serif;
-    }
+a.read-more {
+    color: #FFFFFF;   
+}
+a.read-more:hover {
+    color: #C34816; 
+    text-decoration: none;
+}
+a.updates-title {
+    color: #000000;
+}
+a.updates-title:hover {
+    color: #C34816; 
+    text-decoration: none;
 }
 
-/* Desktop screens */
-@media screen and (min-width: 768px) {
-    div#content-wrapper {
-        position: absolute;
-        top: 130px;
-        padding-left: 17px;
-        padding-right: 17px;
-        width: 768px;
-        font-family: 'Source Sans Pro', sans-serif;
-    }
+div.carousel-caption {
+    font-weight: bold;
+    font-size: 25px;   
+}
+div.carousel-caption p {
+    font-weight: normal;
+    font-size: 16px;   
+}
+div.carousel-content {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+    overflow: hidden;
+}
+div.carousel-content img {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+}
+div.carousel-inner {
+    background: #000000;
+}
+div#carousel-updates {
+    margin-bottom: 25px;   
+}
+div.post-img {
+    width: auto!important;
+    height: 400px!important;
+    max-height: 400px;
+}
+
+h2.page-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style: none outside none;
+}
+
+p.contact-form {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding-bottom: 5px;
 }

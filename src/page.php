@@ -1,5 +1,8 @@
 <?php get_header(); ?>
     <div id="content-wrapper">
-            <?php echo getPageContent( get_the_title( get_the_ID() ) ) ?>
+        <?php while( have_posts() ):
+            the_post();
+            the_content();
+        endwhile;?>
 	</div>
 <?php get_footer(); ?>

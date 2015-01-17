@@ -1,9 +1,10 @@
 /*
 Theme Name: Red Rock Robotics
-Author: Harrison Unruh & Annie Yun
-Description: A theme designed to be optimized for the FIRST robotics team 3006, Red Rock Robotics. The theme depends on Bootstrap to provide a CSS framework;
+Author: Harrison Unruh
+Description: A theme designed to be optimized for the FIRST robotics team 3006, Red Rock Robotics. The theme depends on Bootstrap to provide a CSS framework
 Version: 1.0
 License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
 Text Domain: redrock
 
 */
@@ -22,4 +23,29 @@ div#body-wrapper {
     width: 768px;
     margin: 0 auto;
     padding: 0;
+}
+
+/* Styling specific to screen size */
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+    div#content-wrapper {
+        position: absolute;
+        top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100% - 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 768px) {
+    div#content-wrapper {
+        position: absolute;
+        top: 130px;
+        padding-left: 17px;
+        padding-right: 17px;
+        width: 768px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 }

@@ -62,6 +62,10 @@ ul.nav a {
         display: block;
     }
 
+    a.btn-login {
+        display: none;
+    }
+
     div.navbar-collapse {
         position: absolute;
         width: 100%;
@@ -89,6 +93,17 @@ ul.nav a {
 
 /* Desktop screens */
 @media screen and (min-width: 768px) {
+    a.btn-login {
+        padding-left: 15px;
+        color: #CCCCCC;
+        font-size: 13px;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+    a.btn-login:hover {
+        color: #C34816;
+        cursor: pointer;
+    }
     a.dropdown-link {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;  
@@ -136,6 +151,12 @@ ul.nav a {
     }
     nav.navbar-redrock {
         height: 120px;
+        width: 768px;
+    }
+    nav#nav-users {
+        position: absolute;
+        right: 27px;
+        top: 1px;
     }
 
     span.highlight {

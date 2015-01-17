@@ -1,4 +1,6 @@
 <?php
+add_theme_support( 'post-thumbnails' ); 
+
 function getPageContent($title) {
     $page = get_page_by_title($title);
     $content = '';
@@ -9,4 +11,17 @@ function getPageContent($title) {
 
     return $content;
 }
+
+function custom_excerpt_length_10( $length ) {
+	return 10;
+}
+
+function custom_excerpt_length_25( $length ) {
+	return 25;
+}
+
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 ?>
